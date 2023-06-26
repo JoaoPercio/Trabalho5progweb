@@ -1,0 +1,347 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "game_back",
+    "dateExported": "2023-05-20T19:28:55.745Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "48ba0152-5f69-44a6-a4ba-5410521619ae",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "SingUp",
+            "url": "http://localhost:3333/api/signup",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-05-20T19:02:54.674Z",
+            "modified": "2023-05-20T19:25:01.963Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nick\": \"SoloqPatrickVrau\",\n  \"email\": \"cleitocraft5@hotmail.br\",\n  \"senha\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "db43f07e-726f-4cf4-bc93-74aa0cd886d3",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3333/api/login",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2023-05-20T19:04:07.303Z",
+            "modified": "2023-05-20T19:22:58.004Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"cleitocraft5@hotmail.br\",\n  \"senha\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "39798bbf-6e44-473a-a15c-ff7c0eb4ed3a",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "UsuarioPost",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "POST",
+            "sortNum": 8750,
+            "created": "2023-05-20T19:04:54.990Z",
+            "modified": "2023-05-20T19:06:59.361Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nick\": \"XxZedxX\",\n  \"email\": \"shadowcraft@uol.br\",\n  \"senha\": \"craft\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f651babe-497b-4e42-b366-ebee6f82eecd",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "UsuarioPut",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-05-20T19:07:43.689Z",
+            "modified": "2023-05-20T19:08:41.256Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nick\": \"craftGamer\",\n  \"email\": \"shadowzin@uol.com\",\n  \"senha\": \"\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "48dbf0bf-99be-4cac-ac6c-2c9750c2fbfa",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "UsuarioDelete",
+            "url": "http://localhost:3333/api/usuarios/2",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-05-20T19:09:01.804Z",
+            "modified": "2023-05-20T19:25:39.834Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f05a4d02-39aa-415e-8a45-f1a682c9518d",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "UsuarioGetALL",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-05-20T19:10:10.091Z",
+            "modified": "2023-05-20T19:10:30.988Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "950a2468-e96c-4849-8984-6c47abaa5b2c",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "UsuarioGetByID",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-05-20T19:10:51.793Z",
+            "modified": "2023-05-20T19:11:06.092Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2cc4bb60-cd68-484e-8b97-376133b86e3b",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "JogoPost",
+            "url": "http://localhost:3333/api/jogos",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-05-20T19:11:30.793Z",
+            "modified": "2023-05-20T19:12:25.793Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"League of Legends\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e71fe8f-3007-4dff-a0c8-4ca950fb4cd0",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "JogoPost",
+            "url": "http://localhost:3333/api/jogos/1",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-05-20T19:12:48.189Z",
+            "modified": "2023-05-20T19:13:35.606Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"minecraft\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0995cc2c-3a28-4436-b69d-95bdeee54503",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "JogoDelete",
+            "url": "http://localhost:3333/api/jogos/2",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-05-20T19:13:50.117Z",
+            "modified": "2023-05-20T19:14:24.260Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "46a06515-3917-4ac7-8c86-f402000b1bf8",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "JogoGetALL",
+            "url": "http://localhost:3333/api/jogos",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-05-20T19:14:46.225Z",
+            "modified": "2023-05-20T19:15:03.947Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9dc13b7f-e436-468b-a422-46d1fcb78db9",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "JogoGetByID",
+            "url": "http://localhost:3333/api/jogos/1",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-05-20T19:15:16.048Z",
+            "modified": "2023-05-20T19:15:34.454Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ba151a4-1d04-45e1-8c9b-75b81121c56f",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "SalaPost",
+            "url": "http://localhost:3333/api/salas",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2023-05-20T19:17:14.843Z",
+            "modified": "2023-05-20T19:26:58.528Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 1,\n  \"id_jogo\": 1,\n  \"nome\": \"minecraft sem mods\",\n  \"descricao\": \"minecraft sobrevivencia hardcore\",\n  \"hora\": \"2023-05-20T02:21:37.488Z\",\n  \"usuario_ids\": [1,3]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "35e4a61c-19c4-4590-bf34-4528a0a579fe",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "SalaPut",
+            "url": "http://localhost:3333/api/salas/2",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2023-05-20T19:18:10.182Z",
+            "modified": "2023-05-20T19:27:39.257Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 1,\n  \"id_jogo\": 1,\n  \"nome\": \"League of legends Duo\",\n  \"descricao\": \"agora é de lol XD\",\n  \"hora\": \"2023-05-20T02:21:37.488Z\",\n  \"usuario_ids\": [1,2]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "19a51a14-fc64-40de-b3d9-eff816bc8119",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "DeleteSala",
+            "url": "http://localhost:3333/api/salas/2",
+            "method": "DELETE",
+            "sortNum": 170000,
+            "created": "2023-05-20T19:20:45.104Z",
+            "modified": "2023-05-20T19:27:58.595Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8d75a67-5a67-4b83-be46-427e8ffaf0fe",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "SalaGetALL",
+            "url": "http://localhost:3333/api/salas",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-05-20T19:21:12.962Z",
+            "modified": "2023-05-20T19:21:32.727Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e02c6162-6d4a-460e-aee3-d22fa3943deb",
+            "colId": "27ed3e78-3509-49a0-89f6-c069ccae0b2e",
+            "containerId": "",
+            "name": "SalaGetByID",
+            "url": "http://localhost:3333/api/salas/2",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-05-20T19:21:46.231Z",
+            "modified": "2023-05-20T19:27:53.779Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        }
+    ]
+}
